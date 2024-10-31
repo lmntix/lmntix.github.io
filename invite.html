@@ -1,95 +1,28 @@
-<style>
-  .email-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    color: #09090b;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fafafa;
-  }
-  .container {
-    background-color: white;
-    border-radius: 12px;
-    padding: 32px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-    border: 1px solid #e5e5e5;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 32px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #e5e5e5;
-  }
-  .logo {
-    font-size: 24px;
-    font-weight: 600;
-    color: #09090b;
-  }
-  h2 {
-    color: #09090b;
-    margin: 0 0 16px 0;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.4;
-  }
-  p {
-    margin-bottom: 20px;
-    color: #71717a;
-    font-size: 15px;
-  }
-  .button {
-    display: inline-block;
-    background-color: #18181b;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 14px;
-    transition: background-color 0.2s;
-  }
-  .button:hover {
-    background-color: #27272a;
-  }
-  .footer {
-    margin-top: 32px;
-    padding-top: 24px;
-    border-top: 1px solid #e5e5e5;
-    font-size: 14px;
-    color: #71717a;
-  }
-  .help-text {
-    margin-top: 16px;
-    font-size: 14px;
-    color: #71717a;
-  }
-</style>
-
-<div class="email-body">
-  <div class="container">
-    <div class="header">
-      <div class="logo">Pocket Finance</div>
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #09090b; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #fafafa;">
+  <div style="background-color: white; border-radius: 12px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); border: 1px solid #e5e5e5;">
+    
+    <div style="display: flex; align-items: center; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid #e5e5e5;">
+      <div style="font-size: 24px; font-weight: 600; color: #09090b;">Pocket Finance</div>
     </div>
 
-    <h2>You've been invited to join Pocket Finance</h2>
-    <p>You have received an invitation to create an account on Pocket Finance's secure financial management platform. Join us to start managing your finances more effectively.</p>
+    <h2 style="color: #09090b; margin: 0 0 16px 0; font-weight: 600; font-size: 20px; line-height: 1.4;">You've been invited to join Pocket Finance</h2>
     
-    <p>As a member, you'll get access to:</p>
-    <p style="margin-left: 16px; margin-bottom: 8px;">• Real-time financial tracking and analytics</p>
-    <p style="margin-left: 16px; margin-bottom: 8px;">• Secure transaction management</p>
-    <p style="margin-left: 16px; margin-bottom: 24px;">• Comprehensive reporting tools</p>
+    <p style="margin-bottom: 20px; color: #71717a; font-size: 15px;">You have received an invitation to create an account on Pocket Finance's secure financial management platform. Join us to start managing your finances more effectively.</p>
+    
+    <p style="margin-bottom: 20px; color: #71717a; font-size: 15px;">As a member, you'll get access to:</p>
+    <p style="margin-left: 16px; margin-bottom: 8px; color: #71717a; font-size: 15px;">• Real-time financial tracking and analytics</p>
+    <p style="margin-left: 16px; margin-bottom: 8px; color: #71717a; font-size: 15px;">• Secure transaction management</p>
+    <p style="margin-left: 16px; margin-bottom: 24px; color: #71717a; font-size: 15px;">• Comprehensive reporting tools</p>
 
-    <a href="{{ .ConfirmationURL }}" class="button">Accept Invitation</a>
+    <a href="{{ .ConfirmationURL }}" style="display: inline-block; background-color: #18181b; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 500; font-size: 14px; transition: background-color 0.2s;">Accept Invitation</a>
 
-    <div class="help-text">
+    <div style="margin-top: 16px; font-size: 14px; color: #71717a;">
       This invitation was sent to you for {{ .SiteURL }}. If you weren't expecting this invitation, you can safely ignore this email.
     </div>
 
-    <div class="footer">
-      <p style="margin-bottom: 8px;">Need help? Contact our support team</p>
-      <p style="margin-bottom: 0;">© 2024 Pocket Finance. All rights reserved.</p>
+    <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 14px; color: #71717a;">
+      <p style="margin-bottom: 8px; color: #71717a;">Need help? Contact our support team</p>
+      <p style="margin-bottom: 0; color: #71717a;">© 2024 Pocket Finance. All rights reserved.</p>
     </div>
   </div>
 </div>
