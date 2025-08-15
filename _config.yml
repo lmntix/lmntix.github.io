@@ -1,1 +1,3 @@
 permalink: /:title:output_ext
+markdown: kramdown
+theme: minima
