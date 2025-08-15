@@ -6,37 +6,34 @@
   <style>
     body { margin: 0; font-family: Arial, sans-serif; }
     aside {
-      position: fixed;
+      position: fixed;      /* stays fixed on scroll */
       top: 0;
       left: 0;
       width: 200px;
-      height: 100%;
+      height: 100vh;        /* full viewport height */
       background: #f4f4f4;
       padding: 15px;
       box-sizing: border-box;
-      overflow-y: auto;
     }
     aside ul { list-style: none; padding: 0; margin: 0; }
     aside li { margin-bottom: 8px; }
     aside a { text-decoration: none; color: #333; }
     main {
-      margin-left: 220px;
+      margin-left: 220px;   /* leave space for sidebar */
       padding: 20px;
     }
   </style>
 </head>
 <body>
   <aside>
-    <h3>Pages</h3>
+    <h3>Menu</h3>
     <ul>
-      {% assign md_pages = site.pages | where_exp: "p", "p.path contains '.md'" %}
-      {% for p in md_pages %}
-        {% if p.title and p.url != "/" %}
-          <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/pf' | relative_url }}">PF Details</a></li>
+      <li><a href="{{ '/about' | relative_url }}">About</a></li>
     </ul>
   </aside>
+
   <main>
     {{ content }}
   </main>
