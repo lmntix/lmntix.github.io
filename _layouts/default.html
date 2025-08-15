@@ -1,0 +1,11 @@
+<aside>
+  <h3>Pages</h3>
+  <ul>
+    {% assign pages_list = site.pages | sort: "title" %}
+    {% for p in pages_list %}
+      {% if p.extname == ".md" and p.title %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</aside>
