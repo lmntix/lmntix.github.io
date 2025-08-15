@@ -1,5 +1,6 @@
 ---
 title: Home
+layout: Default
 ---
 
 # Chart of Accounts (CoA) Design for Multi-Tenant Microfinance Application
